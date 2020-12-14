@@ -1,0 +1,32 @@
+
+
+.footer {
+    background-color: #222;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #949494;
+    
+    .support {
+        margin: 15px 0;
+
+        .logo__zion {
+            border-radius: 8px;
+            width: 80px;
+            height: auto;
+        }
+        .support__info {
+            .title__info {
+                font-weight: 400;
+                color: #fff;
+            }
+            a {
+                text-decoration: none;
+                color: red;
+            }
+        }
+        .logo__congThuong {
+            width: 130px;
+            float: right;
+        }
+    }
+}

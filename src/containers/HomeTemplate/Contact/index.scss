@@ -1,0 +1,61 @@
+.contact {
+    background-color: #222;
+    .footer__top {
+        border-bottom: 1px solid #4a4a4a;
+        p {
+            color: #fff;
+            font-size: 80%;
+        }
+        .footer__title {
+            ul {
+                li {
+                    list-style: none;
+                    cursor: pointer;
+                    a {
+                        text-decoration: none;
+                        color: #949494;
+                        transition: all 0.5s;
+                        font-size: 80%;
+                    }
+                    &:hover {
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__icon {
+            p {
+                font-size: 80%;
+            }
+            a {
+                margin-right: 10px;
+                text-decoration: none;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: white;
+                    transition: all 0.3s;
+                }
+                &:hover {
+                    img {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+        .footer__app {
+            p {
+                font-size: 80%;
+            }
+            img {
+                background: 0 0;
+                height: 30px;
+                width: auto;
+                margin: 5px;
+            }
+        }
+    }
+}

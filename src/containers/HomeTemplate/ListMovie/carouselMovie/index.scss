@@ -1,0 +1,68 @@
+.list__movie {
+    height: 300px;
+    padding: 0 15px;   
+ 
+    .img-movie {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: all 5s;
+        .over__lay{
+            display: none;
+        }
+        &:hover {
+            .over__lay {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to bottom, rgba(255, 255, 255 , 0.5), rgba(0, 0, 0, 0.7));
+                top: 0;
+                left: 0;
+             
+                .play-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .rate {
+            position: absolute;
+            top: 10px;
+            right: 15%;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 5px 15px;
+            border-radius: 10px;
+        }
+    }
+}
+.card-body {
+    height: 100px;
+    .btnBuyTicket {
+        display: none;
+    }
+    .name-movie {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+}
+.movie {
+    &:hover {
+        .name-movie{
+            display: none;
+        }
+        .btnBuyTicket {
+            display: block;
+        }
+    }
+}

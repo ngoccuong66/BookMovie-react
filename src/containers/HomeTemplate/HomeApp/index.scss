@@ -1,0 +1,181 @@
+.home__app {
+    width: 100%;
+    background-image: url(./asset/backapp.jpg);
+  
+    background-size: contain;
+    padding: 120px 0 80px 0;
+    .app__left {
+        padding-top:  60px;
+        padding-right: 15px;
+        padding-left: 15px;
+        p {
+            &:nth-child(1){
+                color: #fff;
+                font-weight: 700;
+                font-size: xx-large;
+            } 
+            &:nth-child(2){
+                color: #fff;
+                font-weight: 700;
+                font-size: xx-large;
+            } 
+            &:last-child {
+                color: #fff;
+                padding-top: 10px;
+                a {
+                    color: white;
+                }
+            }
+        }
+        .text__small{
+            color: #fff;
+            font-size: medium;
+        } 
+        button {
+            background-color: #fb4226;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: medium;
+            font-weight: 700;
+            border: none;
+            border-radius: 4px;
+        }
+    }
+    .apps__right {
+        position: relative;
+        transition: all .5s;
+        .apps__carousel {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 186px;
+            overflow: hidden;
+            border-radius: 17px;
+        }
+        .img__items {
+            position: relative;
+            height: 400px;
+            img {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .img__bg {
+            height: 420px;
+            position: relative;
+        }
+    }
+}
+@media screen and ( max-width : 768px) {
+    .home__app{
+        .app__right {
+            .right__item {
+                width: 40%;
+            }
+        }
+    }
+ 
+}
+@media screen and ( max-width : 480px) {
+    .home__app {
+        .app__right {
+            .right__item {
+               width: 50%;
+            }
+        }
+    }
+}
+
+
+
+// .apps {
+//     .apps__bg {
+//         background: url(./asset/backapp.jpg);
+//         padding: 120px 0 80px 0;
+//         background-size: contain;
+//     }
+//     .apps__row {
+//         height: 100%;
+//         h2 {
+//             font-weight: 700;
+//             font-size: xx-large;
+//         }
+//         button {
+//             padding: 10px 20px;
+//             font-size: medium;
+//             font-weight: 700;
+//             border: none;
+//             border-radius: 4px;
+//             &:hover {
+//                 background: linear-gradient(to left, #fb4226, #ce3017 100%);    
+//             }
+//             &:focus {
+//                 outline: none;
+//                 box-shadow: none;
+//                 border: 0;
+//             }
+//         }
+//         p {
+//             font-size: medium;
+//             a {
+//                 border-bottom: 1px solid;
+//                 &:hover {
+//                     text-decoration: none;
+//                 }
+//             }
+//         }
+//         .textAppUnder {
+//             font-size: smaller;
+//         }
+//         // @media screen and (max-width: 992px) {
+//         //     text-align: center;
+//         //     >div {
+//         //         display: block !important;
+//         //     }
+//         // }
+//     }
+//     .apps__img {
+//         position: relative;
+//         transition: all .5s;
+//         .apps__carousel {
+//             position: absolute;
+//             top: 50%;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+//             width: 186px;
+//             overflow: hidden;
+//             border-radius: 17px;
+//         }
+//         .img__items {
+//             position: relative;
+//             height: 400px;
+//             img {
+//                 position: absolute;
+//                 left: 50%;
+//                 transform: translate(-50%);
+//                 height: 100%;
+//                 width: 100%;
+//             }
+//         }
+//         .img__bg {
+//             height: 420px;
+//             position: relative;
+//         }
+//     }
+//     // @media screen and (max-width: 992px) {
+//     //     .apps__carousel {
+//     //         width: 38vw !important;
+//     //         border-radius: 4vw !important;
+//     //     }
+//     //     .img__bg {
+//     //         height: 85vw !important;
+//     //     }
+//     //     .img__items {
+//     //         height: 82vw !important;
+//     //     }
+//     // }
+// }
